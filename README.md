@@ -7,7 +7,7 @@ Sabatte Family Full Ride Scholar
 
 ---
 
-## 🔧 Currently Building
+## 🔧 Currently Building - PRIVATE REPOs 
 
 **[Extended Limit Order Book Matching Engine](https://github.com/Kurisuo/Limit-Order-Book)** — `C++`
 Cache-optimized matching engine with two original order types (Banded Execution Order, VWAP Pre-Execution Gate), targeting 1M+ orders/sec
