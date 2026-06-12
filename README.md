@@ -1,43 +1,68 @@
 # Christopher Zarraga
 
-**C++ Systems Engineer · AI/ML Infrastructure · Quantitative Finance**
+**C++ Systems Engineer · AI Infrastructure & HPC · CUDA**
 
-CS + Bioinformatics student at UC Santa Cruz (Applied Mathematics minor)
-Sabatte Family Full Ride Scholar
+Computer Science student at UC Santa Cruz (Applied Mathematics minor)
+Sabatte Family Full Ride Scholar · Undergraduate AI Researcher
 
 ---
 
-## 🔧 Currently Building - PRIVATE REPOs 
+## 🔬 Research
 
-**[Extended Limit Order Book Matching Engine](https://github.com/Kurisuo/Limit-Order-Book)** — `C++`
-Cache-optimized matching engine with two original order types (Banded Execution Order, VWAP Pre-Execution Gate), targeting 1M+ orders/sec
+**AIEA Lab — UC Santa Cruz** (Prof. Leilani Gilpin)
+Explainable AI research — neuron-level interpretability of LLMs. PyTorch
+analysis pipelines running GPU workloads on the Nautilus Kubernetes cluster.
 
-**[CPU Neural Network Inference Engine](https://github.com/Kurisuo)** — `C++`
-From-scratch forward pass without ML libraries — CUDA port planned
+**Tech4Good Lab — UC Santa Cruz**
+Full-stack development for socially-impactful ML applications —
+Angular, TypeScript, Git-based code review.
 
-**[NVPilot](https://github.com/Kurisuo/NVPilot)** — `TypeScript · nvidia-smi · Windows API`
-Autonomous GPU performance agent built at the NVIDIA x ASUS NemoClaw Hackathon — reads hardware telemetry, classifies GPU tier, and surgically modifies game and system configs to maximize FPS
+---
+
+## 🔧 Projects 
+
+**[Multi-Threaded HTTP Server](https://github.com/Kurisuo/multithreaded-http-server)** — `C · POSIX threads`
+Concurrent HTTP server with a thread pool, bounded producer-consumer work
+queue, and per-URI reader-writer locks over a dynamically-resizing lock table.
+
+**[NVPilot](https://github.com/Kurisuo/NVPilot)** — `TypeScript · C++ · NVML`
+Autonomous GPU performance agent built at the NVIDIA x ASUS NemoClaw
+Hackathon — reads live GPU telemetry, manages process priority, reclaims
+up to 2GB memory per session. C++ rewrite with NVML in progress.
+
+**Neural Network Inference Engine** — `C++ · CUDA` *(in progress, private until release)*
+From-scratch forward pass — matrix multiply, ReLU, Softmax, no ML
+libraries — validated against a PyTorch baseline. CUDA port with
+shared-memory tiling planned, benchmarked against cuBLAS.
+
+**Up next:** in-memory key-value store (epoll event loop, RESP protocol) ·
+lock-free concurrent queue (C++ atomics)
 
 ---
 
 ## 📚 Coursework
 
-`Parallel Computing` · `Computer Architecture` · `Distributed Systems` · `GPU Programming (CUDA)` · `Machine Learning`
+`Computer Systems Design` · `Parallel & Concurrent Programming` ·
+`Databases` · `Artificial Intelligence` · `Machine Learning` ·
+`GPU Programming (Johns Hopkins, Coursera)` · `Scientific Computing`
 
 ---
 
 ## 🛠 Stack
 
-`C/C++` · `TypeScript` · `Python` · `CUDA (Learning)` · `PyTorch` · `Git` · `Linux` · `CMake`
+**Systems:** `C` · `C++ (17/20)` · `POSIX threads` · `Linux` · `CMake` · `Valgrind` · `gdb`
+**GPU & Infra:** `CUDA (learning)` · `NVML` · `Kubernetes (Nautilus)` · `Docker` · `Bash`
+**ML & Web:** `Python` · `PyTorch` · `TypeScript` · `Angular`
 
 ---
 
 ## 📫 Contact
 
-christopherzarraga31@gmail.com · [LinkedIn](https://linkedin.com/in/christopher-zarraga) · [Linktree](#)
+christopherzarraga31@gmail.com · [LinkedIn](https://linkedin.com/in/christopher-zarraga)
 
 ---
 
-*Open to SWE internships in AI/ML infrastructure, quant finance, or computational biology — Summer/Fall 2027*
+*Open to SWE internships in AI/ML infrastructure, systems, and performance
+engineering — Summer/Fall 2027*
 
 ⚡ Fun fact — I just started learning to swim!
