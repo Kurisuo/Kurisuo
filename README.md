@@ -4,7 +4,7 @@
 
 Computer Science @ UC Santa Cruz (Applied Mathematics minor) · Sabatte Family Full-Ride Scholar · Undergraduate AI Researcher
 
-I build systems from scratch in C++ — concurrent servers, a hand-written neural-network inference engine, and a custom vector database — and I'm drawn to the layer where performance actually matters.
+I build systems from scratch in C++ — concurrent servers, a hand-written neural-network inference engine, a custom vector database, and a limit order book — and I'm drawn to the layer where performance actually matters.
 
 📍 Santa Cruz, CA · Open to SWE internships in AI/ML infrastructure, systems & performance engineering — **Summer/Fall 2027**
 
@@ -13,7 +13,7 @@ I build systems from scratch in C++ — concurrent servers, a hand-written neura
 ## 🔬 Research
 
 **AIEA Lab — UC Santa Cruz** · Undergraduate AI Researcher *(Prof. Leilani Gilpin)*
-*Neuron Explanations for Computer Vision* — associating logical rules to individual neurons in deep vision networks to explain which visual concepts each neuron recognizes and in what context. Search + clustering algorithms over neuron activations, in Python / PyTorch on the Nautilus Kubernetes GPU cluster.
+*Robustifying Autonomous Vehicles* — deploying the CARLA driving simulator headless on the Nautilus Kubernetes GPU cluster (PVC-backed storage, GPU-scheduled jobs, custom YAML specs) as the foundation for benchmarking reinforcement-learning algorithms for autonomous-driving safety. Builds on prior neuron-activation analysis work in the lab (Python / PyTorch).
 
 **Tech4Good Lab — UC Santa Cruz** · Undergraduate Full-Stack Researcher
 Generative-AI / ML web applications for social impact. Building standalone Angular components (Signals, OnPush change detection, Material / CDK) in the lab's TypeScript codebase.
@@ -26,13 +26,26 @@ Generative-AI / ML web applications for social impact. Building standalone Angul
 Concurrent GET/PUT server: a fixed-size thread pool fed by a bounded producer–consumer queue with condition-variable signaling, plus per-URI reader–writer locks over a dynamic lock table. Queue and reader–writer lock primitives hand-implemented from scratch over raw POSIX syscalls.
 
 ### VeriFi — Vector Store for a RAG Pipeline · `C++` · *team project · in progress*
-Conceived the project and lead a 5-person team; architected and own the core engine. An in-memory vector store with exact cosine-similarity k-NN retrieval that powers a Retrieval-Augmented Generation pipeline, grounding LLM answers in retrieved source documents.
+Founded the project and lead a 5-person team; architected and own the core engine. An in-memory vector store with exact cosine-similarity k-NN retrieval that powers a Retrieval-Augmented Generation pipeline, grounding LLM answers in retrieved source documents. Defined the Day-1 interface contracts (chunk format, search API, response schema) the team builds against.
+
+### Limit Order Book Matching Engine · `C++`
+A price-time-priority limit order book matching engine, extended with two original order types I designed for tighter execution control:
+- **Banded Execution Order** — a tolerance band around the limit price; the order rests rather than filling when the market gaps beyond an acceptable floor/ceiling, protecting against flash-crash slippage.
+- **VWAP Pre-Execution Gate** — computes the volume-weighted average across available liquidity *before* matching, executing only if the blended fill clears the limit price — so a large order in a thin book can't silently average above the intended ceiling.
+
+Engine and both order types implemented; validation suite in progress.
 
 ### Neural Network Inference Engine · `C++ · PyTorch` · *in progress*
 A from-scratch MNIST inference engine, no ML libraries (784→128→64→10). PyTorch training + binary weight-export pipeline **complete**; the C++ CPU forward pass — matrix multiply, ReLU, argmax — is in development. SIMD + multithreading and a CUDA port are planned.
 
-### NVPilot — GPU Performance Agent · `TypeScript · NVML`
-Autonomous GPU-tuning agent (perceive–plan–act–reflect loop, four tools) built at the NVIDIA × ASUS NemoClaw Hackathon — reads live GPU telemetry via NVML and manages OS-level process priority, freeing ~2 GB of VRAM and up to 10 FPS in Minecraft with shaders enabled. C++ / NVML rewrite in progress.
+### NVPilot — GPU / System Performance Agent · `TypeScript · Node · NVML`
+Autonomous performance agent (perceive–plan–act–reflect loop) that reads live GPU telemetry via NVML, classifies hardware tier, and applies surgical, fully reversible game/system/power optimizations in real time. Built at the NVIDIA × ASUS NemoClaw Hackathon.
+- Full system perception in **~550 ms**; rule-based plan generation **<1 ms** (measured on RTX 3060 Laptop).
+- **Journal-based reversibility** — every mutation records a mechanical inverse; verified byte-identical config restoration with **~3 s** full rollback.
+- Scans **400+ processes** per cycle, identifying ~2 GB of reclaimable background memory.
+- Local LLM planner (Ollama / Nemotron) with schema validation and a deterministic rule-engine fallback — remains functional with the LLM offline.
+- **~2,800 lines** of strict-mode TypeScript across 4 subsystems (drivers, planners, core engine, tool interface). C++ / NVML rewrite planned.
+
 🔗 github.com/Kurisuo/NVPilot
 
 ### Redis Clone — In-Memory Key-Value Store · `C++` · *in progress*
@@ -61,4 +74,4 @@ Computer Systems Design · Data Structures & Algorithms · Computer Systems & C 
 
 📧 christopherzarraga31@gmail.com  ·  💼 [LinkedIn](https://linkedin.com/in/christopher-zarraga)
 
-*Outside of code: chess, and recently took up swimming.*
+*Outside of code: chess (2000 Elo), and recently took up swimming.*
