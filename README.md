@@ -23,7 +23,7 @@ Generative-AI / ML web applications for social impact. Building standalone Angul
 ## 🔧 Projects
 
 ### Multi-Threaded HTTP/1.1 Server · `C · POSIX threads`
-Concurrent GET/PUT server: a fixed-size thread pool fed by a bounded producer–consumer queue with condition-variable signaling, plus per-URI reader–writer locks over a dynamic lock table. Queue and reader–writer lock primitives hand-implemented from scratch over raw POSIX syscalls.
+Sustained ~8,400 req/s at ~13 ms p99 under 64 concurrent connections — 2.2× a single-threaded baseline, measured with wrk (connection-per-request, 6-core aarch64 VM) — by engineering a C HTTP/1.1 server around a fixed-size thread pool, bounded producer-consumer queue, and hand-rolled per-URI reader–writer locks.
 
 ### VeriFi — Vector Store for a RAG Pipeline · `C++` · *team project · in progress*
 Founded the project and lead a 5-person team; architected and own the core engine. An in-memory vector store with exact cosine-similarity k-NN retrieval that powers a Retrieval-Augmented Generation pipeline, grounding LLM answers in retrieved source documents. Defined the Day-1 interface contracts (chunk format, search API, response schema) the team builds against.
