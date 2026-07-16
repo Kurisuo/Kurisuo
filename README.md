@@ -4,7 +4,7 @@
 
 Computer Science @ UC Santa Cruz (Applied Mathematics minor) · Sabatte Family Full-Ride Scholar · Undergraduate AI Researcher
 
-I build systems from scratch in C++ — concurrent servers, a hand-written neural-network inference engine, a custom vector database, and a limit order book — and I'm drawn to the layer where performance actually matters.
+I build systems from scratch in C and C++ — concurrent servers, a hand-written neural-network inference engine, a custom vector database, and a limit order book — and I'm drawn to the layer where performance actually matters.
 
 📍 Santa Cruz, CA · Open to SWE internships in AI/ML infrastructure, systems & performance engineering — **Summer/Fall 2027**
 
@@ -23,10 +23,10 @@ Generative-AI / ML web applications for social impact. Building standalone Angul
 ## 🔧 Projects
 
 ### Multi-Threaded HTTP/1.1 Server · `C · POSIX threads`
-Sustained ~8,400 req/s at ~13 ms p99 under 64 concurrent connections — 2.2× a single-threaded baseline, measured with wrk (connection-per-request, 6-core aarch64 VM) — by engineering a C HTTP/1.1 server around a fixed-size thread pool, bounded producer-consumer queue, and hand-rolled per-URI reader–writer locks.
+Sustained ~8,400 req/s at ~13 ms p99 under 64 concurrent connections — 2.2× a single-threaded baseline, measured with wrk (connection-per-request, 6-core aarch64 VM) — by engineering a C HTTP/1.1 server around a fixed-size thread pool, bounded producer-consumer queue, and hand-rolled per-URI reader–writer locks over raw POSIX syscalls.
 
-### VeriFi — Vector Store for a RAG Pipeline · `C++` · *team project · in progress*
-Founded the project and lead a 5-person team; architected and own the core engine. An in-memory vector store with exact cosine-similarity k-NN retrieval that powers a Retrieval-Augmented Generation pipeline, grounding LLM answers in retrieved source documents. Defined the Day-1 interface contracts (chunk format, search API, response schema) the team builds against.
+### VeriFi — Vector Store for a RAG Pipeline · `C++` · *team project*
+Founded the project and lead a 5-person team; architected and own the core engine. An in-memory vector store with exact cosine-similarity k-NN retrieval that powers a Retrieval-Augmented Generation pipeline, grounding LLM answers in retrieved source documents. Benchmarked single-threaded (Apple M5, `-O2`, synthetic 384-dim vectors, correctness-gated by a self-retrieval property test): **0.36 ms p50 query latency at 1K vectors, scaling linearly to 96 ms at 250K, with ~33K chunks/sec JSONL ingestion.** Full-sort top-k dominates after the O(N·d) scan — partial-sort/heap selection, indexing, and SIMD are the next optimization targets. Defined the Day-1 interface contracts (chunk format, search API, response schema) the team builds against.
 
 ### Limit Order Book Matching Engine · `C++`
 A price-time-priority limit order book matching engine, extended with two original order types I designed for tighter execution control:
@@ -46,7 +46,7 @@ Autonomous performance agent (perceive–plan–act–reflect loop) that reads l
 - Local LLM planner (Ollama / Nemotron) with schema validation and a deterministic rule-engine fallback — remains functional with the LLM offline.
 - **~2,800 lines** of strict-mode TypeScript across 4 subsystems (drivers, planners, core engine, tool interface). C++ / NVML rewrite planned.
 
-🔗 github.com/Kurisuo/NVPilot
+🔗 [github.com/Kurisuo/NVPilot](https://github.com/Kurisuo/NVPilot) · Live demo: [kurisuo.github.io/NVPilot](https://kurisuo.github.io/NVPilot/)
 
 ### Redis Clone — In-Memory Key-Value Store · `C++` · *in progress*
 Building a Redis-style in-memory key-value store in C++ — TCP server, core commands, and RESP protocol parsing — as a from-scratch systems exercise.
@@ -57,7 +57,7 @@ Building a Redis-style in-memory key-value store in C++ — TCP server, core com
 
 ## 🛠 Tech
 
-**Systems:** C · C++17/20 · POSIX threads · Linux · CMake · gdb · Valgrind · Git
+**Systems:** C · C++17/20 · POSIX threads · Linux · CMake · gdb · Valgrind · wrk · Git
 **GPU & Infra:** NVML · GPU telemetry · Kubernetes (Nautilus) · Docker · Bash · CUDA *(learning)*
 **ML & Web:** Python · PyTorch · NumPy · Pandas · TypeScript · Angular
 
