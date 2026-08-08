@@ -36,7 +36,7 @@ A price-time-priority limit order book matching engine, extended with two origin
 Engine and both order types implemented; validation suite in progress.
 
 ### Neural Network Inference Engine · `C++ · PyTorch` · *in progress*
-A from-scratch MNIST inference engine, no ML libraries at runtime (784→128→64→10). PyTorch training + binary weight export **complete** (test accuracy 97.33%). C++ CPU path — matrix multiply, ReLU, argmax, weight loader — **implemented and unit-tested**; sample-level validation against PyTorch is the current gate. SIMD + multithreading and a CUDA port are planned.
+A from-scratch MNIST inference engine, no ML libraries (784→128→64→10). PyTorch training + binary weight-export pipeline **complete**; the C++ CPU forward pass — matrix multiply, ReLU, argmax — is in development. SIMD + multithreading and a CUDA port are planned.
 
 ### NVPilot — GPU / System Performance Agent · `TypeScript · Node · NVML`
 Autonomous performance agent (perceive–plan–act–reflect loop) that reads live GPU telemetry via NVML, classifies hardware tier, and applies surgical, fully reversible game/system/power optimizations in real time. Built at the NVIDIA × ASUS NemoClaw Hackathon.
@@ -47,6 +47,12 @@ Autonomous performance agent (perceive–plan–act–reflect loop) that reads l
 - **~2,800 lines** of strict-mode TypeScript across 4 subsystems (drivers, planners, core engine, tool interface). C++ / NVML rewrite planned.
 
 🔗 [github.com/Kurisuo/NVPilot](https://github.com/Kurisuo/NVPilot) · Live demo: [kurisuo.github.io/NVPilot](https://kurisuo.github.io/NVPilot/)
+
+### Redis Clone — In-Memory Key-Value Store · `C++` · *in progress*
+Building a Redis-style in-memory key-value store in C++ — TCP server, core commands, and RESP protocol parsing — as a from-scratch systems exercise.
+
+*Exploring next: a lock-free concurrent queue (C++ atomics).*
+
 ---
 
 ## 🛠 Tech
