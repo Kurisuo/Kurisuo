@@ -5,9 +5,7 @@
 [![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:christopherzarraga31@gmail.com)
 [![Portfolio](https://img.shields.io/badge/Portfolio-27272A?style=for-the-badge&logo=firefox&logoColor=white)](kurisuo.github.io/Christopher-Zarraga-Portfolio-Website/)
 
-<img align="left" src="<img width="768" height="1024" alt="31A07B07-8403-4B91-9BE7-F85215340B02_1_105_c" src="https://github.com/user-attachments/assets/1eedef93-8d35-4af1-9c3d-bf6fff2286f0" />
-" width="135" alt="Chris Zarraga" />
-
+<img width="768" height="1024" alt="31A07B07-8403-4B91-9BE7-F85215340B02_1_105_c" src="https://github.com/user-attachments/assets/1eedef93-8d35-4af1-9c3d-bf6fff2286f0" />
 
 Hi, I'm Chris! I am a CS student at UC Santa Cruz focused on OS internals, Linux, CUDA, and practical AI that improves everyday tech. I research Autonomous Vehicle frame-monitoring at UCSC's AIEA Lab and am currently building **SlugOS**, an operating system from scratch in C++ with Limine. Outside of code, I learned to swim earlier this year and spend my free time practicing laps.
 
