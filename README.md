@@ -3,9 +3,9 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/christopher-zarraga)
 [![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:christopherzarraga31@gmail.com)
-[![Portfolio](https://img.shields.io/badge/Portfolio-27272A?style=for-the-badge&logo=firefox&logoColor=white)](kurisuo.github.io/Christopher-Zarraga-Portfolio-Website/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-27272A?style=for-the-badge&logo=firefox&logoColor=white)](https://kurisuo.github.io/Christopher-Zarraga-Portfolio-Website/)
 
-<img width="768" height="1024" alt="31A07B07-8403-4B91-9BE7-F85215340B02_1_105_c" src="https://github.com/user-attachments/assets/1eedef93-8d35-4af1-9c3d-bf6fff2286f0" />
+<img align="left" width="120" alt="Christopher Zarraga" src="https://github.com/user-attachments/assets/1eedef93-8d35-4af1-9c3d-bf6fff2286f0" />
 
 Hi, I'm Chris! I am a CS student at UC Santa Cruz focused on OS internals, Linux, CUDA, and practical AI that improves everyday tech. I research Autonomous Vehicle frame-monitoring at UCSC's AIEA Lab and am currently building **SlugOS**, an operating system from scratch in C++ with Limine. Outside of code, I learned to swim earlier this year and spend my free time practicing laps.
 
@@ -57,14 +57,4 @@ Founded and led a 5-person team building a policy-grounded RAG engine. Implement
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
 ![Gymnasium](https://img.shields.io/badge/Gymnasium-0081A5?style=for-the-badge&logoColor=white)
-![Stable-Baselines3](https://img.shields.io/badge/Stable--Baselines3-1E3A8A?style=for-the-badge&logoColor=white)
-
-**AI Tooling**  
-![NVIDIA NeMo Agents](https://img.shields.io/badge/NVIDIA_NeMo_Agents-76B900?style=for-the-badge&logo=nvidia&logoColor=white)
-![Ollama](https://img.shields.io/badge/Ollama-18181B?style=for-the-badge&logo=ollama&logoColor=white)
-![OpenAI API](https://img.shields.io/badge/OpenAI_API-412991?style=for-the-badge&logo=openai&logoColor=white)
-![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=for-the-badge&logo=anthropic&logoColor=white)
-![Cursor](https://img.shields.io/badge/Cursor-000000?style=for-the-badge&logo=cursor&logoColor=white)
-![Codex](https://img.shields.io/badge/Codex-10A37F?style=for-the-badge&logo=openai&logoColor=white)
-![ElevenLabs](https://img.shields.io/badge/ElevenLabs-111111?style=for-the-badge&logo=elevenlabs&logoColor=white)
-![Google Antigravity](https://img.shields.io/badge/Google_Antigravity-4285F4?style=for-the-badge&logo=google&logoColor=white)
+![Stable-Baselines3](
