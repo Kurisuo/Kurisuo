@@ -1,4 +1,4 @@
-### Chris Zarraga
+### Christopher Zarraga
 **OS Internals · Linux · CUDA · Systems C/C++**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-18181b?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/christopher-zarraga)
@@ -33,7 +33,7 @@ off-clock : Lap swimming, chess, calisthenics
 
 | Category | Tools |
 | :--- | :--- |
-| **Languages** | `C` `C++` `Python` `SQL` |
-| **Systems & Infra** | `Linux` `Bash` `CMake` `Git` `Docker` `Kubernetes` `PostgreSQL` |
-| **ML & Simulation** | `PyTorch` `NumPy` `Gymnasium` `Stable-Baselines3` |
-| **AI Tooling** | `NVIDIA NeMo Agents` `Ollama` `OpenAI API` `Claude Code` `Cursor` `Codex` `ElevenLabs` `Google Antigravity` |
+| **Languages** | ![C](https://img.shields.io/badge/C-18181b?style=flat-square&logo=c&logoColor=white) ![C++](https://img.shields.io/badge/C%2B%2B-18181b?style=flat-square&logo=cplusplus&logoColor=white) ![Python](https://img.shields.io/badge/Python-18181b?style=flat-square&logo=python&logoColor=white) ![SQL](https://img.shields.io/badge/SQL-18181b?style=flat-square) |
+| **Systems & Infra** | ![Linux](https://img.shields.io/badge/Linux-18181b?style=flat-square&logo=linux&logoColor=white) ![Bash](https://img.shields.io/badge/Bash-18181b?style=flat-square&logo=gnubash&logoColor=white) ![CMake](https://img.shields.io/badge/CMake-18181b?style=flat-square&logo=cmake&logoColor=white) ![Git](https://img.shields.io/badge/Git-18181b?style=flat-square&logo=git&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-18181b?style=flat-square&logo=docker&logoColor=white) ![Kubernetes](https://img.shields.io/badge/Kubernetes-18181b?style=flat-square&logo=kubernetes&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-18181b?style=flat-square&logo=postgresql&logoColor=white) |
+| **ML & Simulation** | ![PyTorch](https://img.shields.io/badge/PyTorch-18181b?style=flat-square&logo=pytorch&logoColor=white) ![NumPy](https://img.shields.io/badge/NumPy-18181b?style=flat-square&logo=numpy&logoColor=white) ![Gymnasium](https://img.shields.io/badge/Gymnasium-18181b?style=flat-square) ![Stable-Baselines3](https://img.shields.io/badge/Stable--Baselines3-18181b?style=flat-square) |
+| **AI Tooling** | ![NVIDIA NeMo Agents](https://img.shields.io/badge/NVIDIA_NeMo_Agents-18181b?style=flat-square&logo=nvidia&logoColor=white) ![Ollama](https://img.shields.io/badge/Ollama-18181b?style=flat-square&logo=ollama&logoColor=white) ![OpenAI API](https://img.shields.io/badge/OpenAI_API-18181b?style=flat-square&logo=openai&logoColor=white) ![Claude Code](https://img.shields.io/badge/Claude_Code-18181b?style=flat-square&logo=anthropic&logoColor=white) ![Cursor](https://img.shields.io/badge/Cursor-18181b?style=flat-square&logo=cursor&logoColor=white) ![Codex](https://img.shields.io/badge/Codex-18181b?style=flat-square&logo=openai&logoColor=white) ![ElevenLabs](https://img.shields.io/badge/ElevenLabs-18181b?style=flat-square&logo=elevenlabs&logoColor=white) ![Google Antigravity](https://img.shields.io/badge/Google_Antigravity-18181b?style=flat-square&logo=google&logoColor=white) |
